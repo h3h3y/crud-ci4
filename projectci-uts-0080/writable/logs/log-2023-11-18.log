@@ -1,0 +1,51 @@
+CRITICAL - 2023-11-18 04:28:57 --> Call to undefined method App\Models\ModelBuku::getDetailBuku
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Iwan.php(25): CodeIgniter\Model->__call('getDetailBuku', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->detailbuku('', 'TD673')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+INFO - 2023-11-18 04:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 04:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-18 04:44:32 --> Call to undefined method App\Models\ModelBuku::getDetailBuku
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Iwan.php(25): CodeIgniter\Model->__call('getDetailBuku', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->detailbuku('', 'TD673')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+INFO - 2023-11-18 04:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-18 05:08:04 --> Attempt to read property "bukukode" on array
+in APPPATH\Views\utsview\detailbukuview.php on line 21.
+ 1 APPPATH\Views\utsview\detailbukuview.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "bukukode" on array', 'D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\detailbukuview.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\detailbukuview.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/detailbukuview', [], true)
+ 5 APPPATH\Controllers\Iwan.php(27): view('utsview/detailbukuview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->detailbuku('TD673')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+INFO - 2023-11-18 05:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 06:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 13:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 13:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

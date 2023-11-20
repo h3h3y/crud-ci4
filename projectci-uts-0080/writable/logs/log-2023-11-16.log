@@ -1,0 +1,1500 @@
+CRITICAL - 2023-11-16 07:47:42 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 07:47:42 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:50:48 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 07:50:48 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:50:48 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 07:50:48 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:50:49 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 07:50:49 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:50:49 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 07:50:49 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:51:03 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 07:51:04 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:56:29 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 07:56:29 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:58:37 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 07:58:37 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:00:34 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:00:34 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:01:30 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:01:30 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:02:40 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:02:40 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:05:27 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:05:27 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:10:15 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:10:15 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:12:16 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:12:16 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:12:52 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:12:52 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:16:05 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:16:05 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 08:19:07 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 08:19:07 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 10:47:06 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 10:47:06 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 10:51:51 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 10:51:51 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 10:53:31 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 10:53:31 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 10:55:24 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-11-16 10:55:24 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 D:\stimik\pemweb 2\projectci-uts-0080\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 12:08:46 --> Call to undefined function form_open()
+in APPPATH\Views\utsview\inputbukuview.php on line 12.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/inputbukuview', [], true)
+ 4 APPPATH\Controllers\Iwan.php(19): view('utsview/inputbukuview')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->inputbuku()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 12:12:06 --> Call to undefined function form_open()
+in APPPATH\Views\utsview\inputbukuview.php on line 12.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/inputbukuview', [], true)
+ 4 APPPATH\Controllers\Iwan.php(19): view('utsview/inputbukuview')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->inputbuku()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 12:19:06 --> Call to undefined function form_open()
+in APPPATH\Views\utsview\inputbukuview.php on line 12.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/inputbukuview', [], true)
+ 4 APPPATH\Controllers\Iwan.php(19): view('utsview/inputbukuview')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->inputbuku()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 13:53:58 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Iwan.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 13:58:17 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Iwan.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 13:58:30 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Iwan.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 14:01:30 --> Call to a member function store() on null
+in APPPATH\Controllers\Iwan.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+ERROR - 2023-11-16 14:25:16 --> mysqli_sql_exception: Column 'bukukategori' cannot be null in D:\stimik\pemweb 2\projectci-uts-0080\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\app\Controllers\Iwan.php(51): CodeIgniter\Model->insert(Array)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#13 {main}
+CRITICAL - 2023-11-16 14:25:16 --> Column 'bukukategori' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbbuku_0080` (`bukukode`, `bukujudul`, `bukukategori`, `bukuhalaman`, `bukupenerbit`, `bukuisbn`, `bukuharga`, `bukusampul`) VALUES (:bukukode:, :bukujudul:, :bukukategori:, :bukuhalaman:, :bukupenerbit:, :bukuisbn:, :bukuharga:, :bukusampul:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Iwan.php(51): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+ERROR - 2023-11-16 14:31:05 --> mysqli_sql_exception: Column 'bukukategori' cannot be null in D:\stimik\pemweb 2\projectci-uts-0080\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\app\Controllers\Iwan.php(51): CodeIgniter\Model->insert(Array)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#13 {main}
+CRITICAL - 2023-11-16 14:31:05 --> Column 'bukukategori' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbbuku_0080` (`bukukode`, `bukujudul`, `bukukategori`, `bukuhalaman`, `bukupenerbit`, `bukuisbn`, `bukuharga`, `bukusampul`) VALUES (:bukukode:, :bukujudul:, :bukukategori:, :bukuhalaman:, :bukupenerbit:, :bukuisbn:, :bukuharga:, :bukusampul:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Iwan.php(51): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+ERROR - 2023-11-16 14:32:23 --> mysqli_sql_exception: Column 'bukusampul' cannot be null in D:\stimik\pemweb 2\projectci-uts-0080\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\stimik\pemweb 2\projectci-uts-0080\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\stimik\pemweb 2\projectci-uts-0080\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\stimik\pemweb 2\projectci-uts-0080\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\stimik\pemweb 2\projectci-uts-0080\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\stimik\pemweb 2\projectci-uts-0080\app\Controllers\Iwan.php(51): CodeIgniter\Model->insert(Array)
+#8 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+#9 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+#10 D:\stimik\pemweb 2\projectci-uts-0080\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\stimik\pemweb 2\projectci-uts-0080\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\stimik\pemweb 2\projectci-uts-0080\system\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemwe...')
+#13 {main}
+CRITICAL - 2023-11-16 14:32:23 --> Column 'bukusampul' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbbuku_0080` (`bukukode`, `bukujudul`, `bukukategori`, `bukuhalaman`, `bukupenerbit`, `bukuisbn`, `bukuharga`, `bukusampul`) VALUES (:bukukode:, :bukujudul:, :bukukategori:, :bukuhalaman:, :bukupenerbit:, :bukuisbn:, :bukuharga:, :bukusampul:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Iwan.php(51): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 14:33:08 --> The uploaded file has already been moved.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 142.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(142): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+ 2 APPPATH\Controllers\Iwan.php(54): CodeIgniter\HTTP\Files\UploadedFile->move('/img/', '1700145188_d87b81461505101ebce4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 14:35:21 --> The uploaded file has already been moved.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 142.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(142): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+ 2 APPPATH\Controllers\Iwan.php(54): CodeIgniter\HTTP\Files\UploadedFile->move('/img/', '1700145321_413abf6700e578cf2110.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 14:36:02 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\stimik\\pemweb 2\\projectci-uts-0080\\writable\\uploads/20231116/', '1700145362_b7a6164c0c5b08a0ff3c')
+ 3 APPPATH\Controllers\Iwan.php(39): CodeIgniter\HTTP\Files\UploadedFile->store()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->simpandatabuku()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 14:38:22 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\utsview\detailbukuview.php on line 12.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/detailbukuview', [], true)
+ 4 APPPATH\Controllers\Iwan.php(17): view('utsview/detailbukuview')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->detailbuku()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+INFO - 2023-11-16 16:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 17:03:00 --> Invalid file: "utsview/editbuku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utsview/editbuku.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/editbuku', [], true)
+ 3 APPPATH\Controllers\Iwan.php(76): view('utsview/editbuku', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->editbuku('TD598')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 17:10:11 --> Undefined variable $buku
+in APPPATH\Views\utsview\editbukuview.php on line 33.
+ 1 APPPATH\Views\utsview\editbukuview.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $buku', 'D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\editbukuview.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\editbukuview.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/editbukuview', [], true)
+ 5 APPPATH\Controllers\Iwan.php(76): view('utsview/editbukuview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->editbuku('TD598')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 17:11:23 --> Undefined variable $row
+in APPPATH\Views\utsview\editbukuview.php on line 33.
+ 1 APPPATH\Views\utsview\editbukuview.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\editbukuview.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\editbukuview.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/editbukuview', [], true)
+ 5 APPPATH\Controllers\Iwan.php(76): view('utsview/editbukuview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->editbuku('TD598')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+CRITICAL - 2023-11-16 17:12:17 --> Undefined variable $row
+in APPPATH\Views\utsview\editbukuview.php on line 34.
+ 1 APPPATH\Views\utsview\editbukuview.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\editbukuview.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\stimik\\pemweb 2\\projectci-uts-0080\\app\\Views\\utsview\\editbukuview.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('utsview/editbukuview', [], true)
+ 5 APPPATH\Controllers\Iwan.php(76): view('utsview/editbukuview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Iwan->editbuku('TD598')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Iwan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\stimik\\pemweb 2\\projectci-uts-0080\\public\\index.php')
+INFO - 2023-11-16 17:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
